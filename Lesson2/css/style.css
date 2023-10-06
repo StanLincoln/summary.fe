@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+
+/* /* nav {
+    display: none;
+}
+
+nav ul {
+    background-color: #f44336;
+    list-style: none;
+    display: flex;
+    /* overflow: hidden; с float применяем overflow: hidden; */
+/* } */
+
+/* nav ul li {
+    float: left;
+} */
+
+/* nav ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 8px 16px;
+    color: #fff;
+}
+
+nav ul li a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.flex-container{
+    background-color: #f2f2f2;
+    height: 400px;
+    display: flex;
+    /* flex-direction: row; */
+/* align-items: center; */
+/* flex-flow: row wrap; */
+/* } */
+
+/* .flex-item {
+    width: 200px;
+}
+
+.bg-success {
+    background-color: blue;
+}
+
+.bg-green {
+    background-color: green;
+}
+
+.bg-pink {
+    background-color: pink;
+    align-items: start;
+} */
+
+.wrapper {
+    background-color: #A7D7C5;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.content {
+    background-color: #F6FBF9;
+    border-radius: 50px;
+    max-width: 462px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 25px 40px;
+}
+
+.content__header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.content__header h2 {
+    font-size: 36px;
+    color: #212B27;
+    margin-bottom: 20px;
+}
+
+.content__header p {
+    color: #32403B;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.form__item input[type="text"] {
+    width: 100%;
+    display: block;
+    padding: 14px 20px;
+    border: 1px solid #00000010;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.form__item input[type="text"]::placeholder {
+    color: #00000050;
+}
+
+.form__item_phone input:first-child {
+    width: 20%;
+}
+
+.form__item_phone input:last-child {
+    width: 80%;
+}
+
+.form__group {
+    display: flex;
+    gap: 10px;
+}

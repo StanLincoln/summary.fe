@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.box-1 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+
+}
+
+.box-2 {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    /* position: relative;
+    left: 40px;
+    top: 40px; */
+    position: absolute;
+}
+
+.box-3 {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    /* position: relative;
+    z-index: 2; */
+}
+
+.parent {
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    position: relative;
+}
+
+.child {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+
+    /* position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    margin: auto; */
+
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+
+    /* position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto; */
+
+    margin: 0 auto;
+}
+
+.fixed {
+    /* position: fixed; */
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 20px;
+    background-color: brown;
+    z-index: 999;
+}
+
+.overlay{
+    border: 1px solid #000;
+    max-width: 370px;
+    position: relative;
+    overflow: hidden;
+}
+.overlay img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.overlay__content{
+    position: absolute;
+    right: 0;
+    top: 100%;
+    transition: .5s;
+    width: 100%;
+    height: 100%;
+    background-color: #00000080;
+    /* display: none; */
+    /* opacity: 0; */
+    /* visibility: hidden; */
+}
+.overlay__content h2{
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.overlay:hover .overlay__content{
+    /* display: block; */
+    /* opacity: 1; */
+    /* visibility: visible; */
+top: 0;
+}
